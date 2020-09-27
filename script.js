@@ -19,14 +19,14 @@ async function getMovies(url) {
 }
 
 function showMovies(movies) {
-    // clear main
+ 
     main.innerHTML = "";
 
     movies.forEach((movie) => {
-        const { poster_path, title, vote_average, overview } = movie;
-
-        const movieEl = document.createElement("div");
-        movieEl.classList.add("movie");
+        const { poster_path, title, vote_average, overview,} = movie;
+		const movieEl = document.createElement("div");
+        
+       movieEl.classList.add("movie");
 
         movieEl.innerHTML = `
             <img
@@ -38,7 +38,7 @@ function showMovies(movies) {
                 <span class="${getClassByRate(vote_average)}">${vote_average}</span>
             </div>
             <div class="overview">
-                <h3>Overview:</h3>
+                <h3>Summary:</h3>
                 ${overview}
             </div>
         `;
