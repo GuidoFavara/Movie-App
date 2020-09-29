@@ -1,6 +1,6 @@
 # What to Watch
 
-A simple proyect web using Vanilla JavaScript with API from The MovieDatabase inspired from [Ui Design Daily](https://uidesigndaily.com/posts/photoshop-movie-app-mobile-day-193)
+A simple proyect web using Vanilla JavaScript with API from The MovieDatabase inspired from [UI Design Daily](https://uidesigndaily.com/posts/photoshop-movie-app-mobile-day-193)
 
 * [See mi project](https://htmlpreview.github.io/?https://github.com/GuidoFavara/WhatToWatch/blob/master/index.html)
 
