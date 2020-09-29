@@ -1,0 +1,48 @@
+    "ACTION": 28,
+    "ADVENTURE": 12,
+    "ANIMATION": 16,
+    "COMEDY": 35,
+    "CRIME": 80,
+    "DOCUMENTARY":99,
+    "DRAMA": 18,
+    "FAMILY": 10751,
+    "FANTASY": 14,
+    "HISTORY": 36,
+    "HORROR": 27,
+    "MUSIC": 10402,
+    "MYSTERY":9648,
+    "ROMANCE": 10749,
+    "THRILLER": 53,
+    "WAR": 10752, https://api.themoviedb.org/3/discover/movie?with_genres=10752&vote_count.gte=10&api_key=04c35731a5ee918f014970082a0088b1&page=1"
+    "WESTERN": 37, 
+    "SCIFI": 878,
+    "TV MOVIE": 10770
+
+
+    What movies are in theatres?
+URL: /discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22
+
+What are the most popular movies?
+URL: /discover/movie?sort_by=popularity.desc
+
+What are the highest rated movies rated R?
+URL: /discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc
+
+
+
+
+What are the best dramas that were released this year?
+URL: /discover/movie?with_genres=18&primary_release_year=2014
+
+What are the highest rated science fiction movies that Tom Cruise has been in?
+URL: /discover/movie?with_genres=878&with_cast=500&sort_by=vote_average.desc
+
+
+
+
+
+What are the best drama's?
+URL: /discover/movie?with_genres=18&sort_by=vote_average.desc&vote_count.gte=10
+
+What are Liam Neeson's highest grossing rated 'R' movies?
+URL: /discover/movie?certification_country=US&certification=R&sort_by=revenue.desc&with_cast=3896

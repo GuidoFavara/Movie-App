@@ -4,38 +4,52 @@
     box-sizing: border-box;
 }
 
-main{ /* Display de imagenes */
+main { /* Modo display de imagenes */
 	display: flex;
-	flex-wrap: wrap;
-}
+	justify-content: center;
+	flex-wrap: wrap;}
 
-body {
+body {  /* Aspecto del fondo */
     background-color: #22254b;
     font-family: "Poppins", sans-serif;
-    margin: 0;
+	margin: 0;
 }
 
+h1 {  /* Titulo */
+	color: white;
+}
+
+.link{ /* Href del título al index */
+	color: white;
+}	
+
+.header img {
+	float: left;
+	width: 100px;
+	height: 100px;
+  }
+  
 header { /* Search Bar */
 
 background-color: #373b69;
 padding: 1rem;
 display: flex;
-justify-content: center;
+justify-content: right;
+justify-content: space-between;
+align-items: center;
 }
-
-.search {
+.search {  
 	background-color: transparent;
 	border: 2px solid #22254b;
 	border-radius: 50px;
 	font-family: inherit;
 	font-size: 1rem;
+	text-align: center;
 	color: white;
-	padding: 0.5rem 1rem;
-}
+	padding: 0.5rem 1rem;}
 
 .search::placeholder{
-	color : #7378c5;
-}
+	color : #7378c5;}
 
 .search:focus {
 	background-color: #22254b;
@@ -53,7 +67,7 @@ justify-content: center;
 	position: relative;
 }
 
-.movie img{ /* Tamaño de la imagen */
+.movie img { /* Tamaño de la imagen */
 	width:  100%;
 }
 
@@ -63,8 +77,7 @@ justify-content: center;
 	align-content: space-between;
 	justify-content: space-between;
 	padding: 0.5rem 1rem 1rem;
-	letter-spacing: 1px;
-}
+	letter-spacing: 1px;}
 
 .movie-info h3 {
 	margin: 0;
@@ -72,24 +85,21 @@ justify-content: center;
 
 .movie-info span { /* Box Puntuacion */
 	background-color: #22254b;
-	padding: 0.25rem 0.5rem;
+	padding: 0.20rem 0.5rem;
 	border-radius: 3px;
-	font-weight: bold;
-}
-
+	font-weight: bold;}
+	
 .movie-info span.green {
-	color: green;
-}
+	color: greenyellow;}
 
 .movie-info span.orange {
-	color: orange;
-}
+	color: orange;}
 
 .movie-info span.red {
 	color: red;
 }
 
-.overview {
+.overview {  /* Descripcion de Pelicula */
 	position: absolute;
 	padding: 2rem;
 	top: 0;
@@ -101,13 +111,42 @@ justify-content: center;
 	background-color: white;
 	padding: 2rem;
 	transform: translateY(100%);
-	transition: transform 0.3s ease-in;
-}
+	transition: transform 0.3s ease-in;}
 
 .movie:hover .overview{
-	transform: translateY(0);
-}
+	transform: translateY(0);}
 
 .overview h4{
-	margin-top:0 ;
+	margin-top:0 ;}
+
+.listingTable {
+	color: white;
+}
+
+.releaseDate {
+	color: white;
+	padding: 1rem;
+	font-size-adjust: initial;
+}
+
+.footer {  /* Firma */
+	background: #373b69;
+	color: #ccc; }
+  
+.footer__attribution {
+	margin-bottom: 0.1rem;
+	font-weight: bold;}
+  
+.footer__attribution,
+.footer__copyright {
+	color: #ccc;
+	line-height: 1;
+	font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+.footer__attribution a,
+.footer__copyright a {
+	  color: yellow;
+	  font-weight: bold; 
 }
