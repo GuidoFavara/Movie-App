@@ -2,7 +2,9 @@
 
 A simple proyect web using Vanilla JavaScript with API from The MovieDatabase
 
+
 Features:
+
 Automatictly display most popular movies.
 
 You can search for your favourite movies.
@@ -14,6 +16,7 @@ Footer.
 Mobile compatibility.
 
 
+
 Display:
 
 Movie name.
@@ -22,7 +25,7 @@ Users score.
 
 Realease dates.
 
-On mouse-over summary from the movie.
+On "mouse-over" summary from the movie.
 
 
 
