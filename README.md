@@ -2,7 +2,7 @@
 
 A simple proyect web using Vanilla JavaScript with API from The MovieDatabase
 
-* [See mi project](https://htmlpreview.github.io/?https://github.com/GuidoFavara/WhatToWatch/blob/master/WhatToWatch/index.html)
+* [See mi project](https://htmlpreview.github.io/?https://github.com/GuidoFavara/WhatToWatch/blob/master/index.html)
 
 Features:
 
