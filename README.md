@@ -19,6 +19,7 @@ Footer.
 Mobile compatibility.
 
 
+
 Display:
 
 Movie name.
