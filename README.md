@@ -11,7 +11,7 @@ Automatictly display most popular movies.
 You can search for your favourite movies.
 
 
-Button on scroll down "back to top".
+Button on scroll down "back to top" when user scroll down 20px or more
 
 
 Footer.
