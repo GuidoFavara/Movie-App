@@ -15,18 +15,18 @@ async function getMovies(url) {
     showMovies(respData.results);
     console.log(respData);
 
-   
+
 }
 
 function showMovies(movies) {
- 
+
     main.innerHTML = "";
 
     movies.forEach((movie) => {
-        const { poster_path, title, vote_average, overview, release_date, production_countries} = movie;
-		const movieEl = document.createElement("div");
-      
-       movieEl.classList.add("movie");
+        const { poster_path, title, vote_average, overview, release_date } = movie;
+        const movieEl = document.createElement("div");
+
+        movieEl.classList.add("movie");
 
         movieEl.innerHTML = `<img src="${IMGPATH + poster_path}"alt="${title}"/>
             <div class= "movie-info">
@@ -39,10 +39,8 @@ function showMovies(movies) {
                 Release: ${release_date}
             </div>
             <div class="releaseDate">
-                <h3>Release: ${release_date}</h3>
+                <h3>${release_date}</h3>
             </div>
-            <div class="releaseDate">
-            <h3>Tester: ${production_countries}</h3>
         </div>`;
         main.appendChild(movieEl);
     });
@@ -69,6 +67,30 @@ form.addEventListener("submit", (e) => {
         search.value = "";
     }
 });
+
+
+/* Llamar al boton*/
+mybutton = document.getElementById("myBtn");
+
+/*Cunaod el usuario baja 20px en el documento aparece el boton*/
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// Cuando el user hace click en el boton lo lleva al inicio
+function topFunction() {
+    document.body.scrollTop = 0; // Safari
+    document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, Opera
+}
+
+
+
 
 /* think next
 

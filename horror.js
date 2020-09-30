@@ -15,18 +15,18 @@ async function getMovies(url) {
     showMovies(respData.results);
     console.log(respData);
 
-   
+
 }
 
 function showMovies(movies) {
- 
+
     main.innerHTML = "";
 
     movies.forEach((movie) => {
-        const { poster_path, title, vote_average, overview, release_date, production_countries} = movie;
-		const movieEl = document.createElement("div");
-      
-       movieEl.classList.add("movie");
+        const { poster_path, title, vote_average, overview, release_date, production_countries } = movie;
+        const movieEl = document.createElement("div");
+
+        movieEl.classList.add("movie");
 
         movieEl.innerHTML = `<img src="${IMGPATH + poster_path}"alt="${title}"/>
             <div class= "movie-info">
